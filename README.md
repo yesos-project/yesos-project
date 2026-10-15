@@ -25,7 +25,7 @@ The goal is security you can check, not just trust:
 | [yesos-core](https://github.com/yesos-project/yesos-core) | The shared kernel: boot, Z3-proven PMP, cells, key hart, RedSea filesystem, encrypted vault, HolyQ JIT, DNS engine. Start here. |
 | [yesos-nas](https://github.com/yesos-project/yesos-nas) | Network storage: HTTPS panel (TLS 1.3 in the kernel), WebDAV with accounts, Noise NK channel, snapshots, encrypted replication. |
 | [yesos-security](https://github.com/yesos-project/yesos-security) | An invisible bridge firewall between the ONT and the router. |
-| [yesos-desktop](https://github.com/yesos-project/yesos-desktop) | The desktop, built one feature at a time (today: the core and its console). |
+| [yesos-desktop](https://github.com/yesos-project/yesos-desktop) | The desktop, built one feature at a time (today: the console and HD Audio output, measured from a WAV recording). |
 
 Design choices and a comparison with Linux, seL4, Zephyr and TempleOS:
 [yesos-core README](https://github.com/yesos-project/yesos-core#2-design-choices).
