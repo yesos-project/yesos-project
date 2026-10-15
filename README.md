@@ -14,6 +14,8 @@ The goal is security you can check, not just trust:
   harts, behind an instruction verifier and a watchdog.
 - **A key that never touches memory.** The vault key lives only in vector
   registers of a dedicated "key hart".
+- **An integer-only kernel.** No floating-point instruction in any image,
+  checked at every build.
 - **Tests for everything,** run under QEMU.
 
 ## Repositories
@@ -24,6 +26,14 @@ The goal is security you can check, not just trust:
 | [yesos-nas](https://github.com/yesos-project/yesos-nas) | Network storage: HTTPS panel (TLS 1.3 in the kernel), WebDAV with accounts, Noise NK channel, snapshots, encrypted replication. |
 | [yesos-security](https://github.com/yesos-project/yesos-security) | An invisible bridge firewall between the ONT and the router. |
 | [yesos-desktop](https://github.com/yesos-project/yesos-desktop) | The desktop, built one feature at a time (today: the core and its console). |
+
+Design choices and a comparison with Linux, seL4, Zephyr and TempleOS:
+[yesos-core README](https://github.com/yesos-project/yesos-core#2-design-choices).
+
+Experimental work kept in a separate tree, coming to YesOS Desktop with tests
+that measure it: EML, an integer-only math library (log-domain numbers,
+Clifford rotors, tropical algebra, FFT) that drives the old desktop's audio
+processing, and the graphical desktop itself.
 
 ## Status
 
